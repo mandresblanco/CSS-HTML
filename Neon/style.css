@@ -1,0 +1,85 @@
+/* *{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+:root{
+    --yellow: #F5F7B2;
+    --blue: #1CC5DC;
+    --purple: #890596;
+    --red: #CF0000;
+
+}*/
+@font-face{
+    font-family: "Twist-Jelly";
+    src: url(./assets/fonts/Twist\ Jelly\ Demo.otf);
+} 
+/* html{
+    font-size: 62.5%;
+    font-family: 'Inconsolata', monospace;
+} */
+
+/* body{
+    background-color: black;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    box-shadow: inset 0 0 red;
+} */
+/* .neon{ */
+/* color: white; */
+/* font-weight: 500; */
+/* font-family: Twist-Jelly; */
+/* font-size: 6rem;
+    text-shadow: 0 0 20px var(--red); */
+/* } */
+body {
+  background: black;
+}
+.container {
+  border: 2px solid white;
+  border-radius: 60px;
+  box-shadow: inset 0 0 5px red, 0 0 10px red;
+  /* inset es dentro */
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.neon1 {
+  font-family: Twist-Jelly;
+  margin: 0;
+  font-size: 50px;
+  text-shadow: 0 0 5px red, 0 0 15px red, 0 0 50px red;
+}
+.neon2 {
+    font-family: monospace;
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 50px yellow;
+  }
+  .neon3 {
+    font-family: monospace;
+    letter-spacing: 5px;
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 0 0 5px purple, 0 0 15px purple, 0 0 50px purple;
+  }
+  .flicker1{
+    animation: parpadear 2s infinite backwards steps(2);
+  }
+  .flicker2{
+    animation: parpadear 2.5s infinite backwards ;
+  }
+  .flicker3{
+    animation: parpadear 5s infinite backwards ;
+  }
+  @keyframes parpadear{
+    to{
+        color: grey;
+        text-shadow: none;
+    }
+  }
